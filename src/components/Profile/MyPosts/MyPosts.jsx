@@ -10,8 +10,8 @@ function MyPosts(props) {
 				<button>Add post</button>
 			</div>
 			<div className={s.posts}>
-				<Post message='Hi, how are you?' likes='   like 15' />
-				<Post message="It is my first post" likes='   like 20' />
+				<Post message='Hi, how are you?' likesCount='15' />
+				<Post message="It is my first post" likesCount='20' />
 			</div>
 		</div>
 	)

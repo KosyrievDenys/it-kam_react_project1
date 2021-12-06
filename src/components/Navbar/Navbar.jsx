@@ -1,23 +1,34 @@
+import { NavLink } from 'react-router-dom';
 import s from './Navbar.module.css';
 
 function Navbar() {
-	return ( 
-	<nav className={s.nav}>
-		<div className={s.item}>
-			<a href='/profile'>Profile</a>
-		</div>
-		<div className={`${s.item} ${s.active}`} >
-			<a href='/dialogs'>Messages</a>
-		</div>
-		<div className={s.item}>
-			<a>News</a>
-		</div>
-		<div className={s.item}>
-			<a>Music</a>
-		</div>
-		<div className={s.item}>
-			<a>Settings</a>
-		</div>
-	</nav>);
+	return (
+		<nav className={s.nav}>
+			<div className={`${s.item} ${s.activeNavLink}`} >
+				{/* <div className={s.activeNavLink}> */}
+					<NavLink to='/profile'>Profile</NavLink>
+				</div>
+			{/* </div> */}
+			<div className={`${s.item} ${s.activeNavLink}`} >
+				{/* <div className={s.activeNavLink}> */}
+					<NavLink to='/dialogs'>Messages</NavLink>
+				</div>
+			{/* </div> */}
+			<div className={`${s.item} ${s.activeNavLink}`} >
+				{/* <div className={s.activeNavLink}> */}
+					<NavLink to='/news'>News</NavLink>
+				</div>
+			{/* </div> */}
+			<div className={`${s.item} ${s.activeNavLink}`} >
+				{/* <div className={s.activeNavLink}> */}
+					<NavLink to='/music'>Music</NavLink>
+				{/* </div> */}
+			</div>
+			<div className={`${s.item} ${s.activeNavLink}`} >
+				{/* <div className={s.activeNavLink}> */}
+					<NavLink to='/settings'>Settings</NavLink>
+				</div>
+			{/* </div> */}
+		</nav>);
 }
-		export default Navbar;
+export default Navbar;

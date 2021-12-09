@@ -17,11 +17,13 @@ function App(props) {
 				<Navbar />
 				<div class='app-wrapper-content'>
 					<Routes>
-						<Route path='/profile' element={<Profile />}/>
+						{/* <Route path='/profile' element={<Profile />}/>
 						<Route path='/dialogs/*' element={<Dialogs />}/>
 						<Route path='/news' element={<News />}/>
 						<Route path='/music' element={<Music />}/>
-						<Route path='/settings' element={<Settings />}/>
+						<Route path='/settings' element={<Settings />}/> */}
+						<Route path='profile' render={ () => <Profile/>} />
+						{/* <Route path='/dialogs' render={ () => <Dialogs /> }/> */}
 					</Routes>
 				</div>
 			</div>

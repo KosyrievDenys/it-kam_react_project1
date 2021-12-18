@@ -8,27 +8,22 @@ function Navbar() {
 				{/* <div className={s.activeNavLink}> */}
 					<NavLink to='/profile'>Profile</NavLink>
 				</div>
-			{/* </div> */}
 			<div className={`${s.item} ${s.activeNavLink}`} >
 				{/* <div className={s.activeNavLink}> */}
 					<NavLink to='/dialogs'>Messages</NavLink>
 				</div>
-			{/* </div> */}
 			<div className={`${s.item} ${s.activeNavLink}`} >
 				{/* <div className={s.activeNavLink}> */}
 					<NavLink to='/news'>News</NavLink>
 				</div>
-			{/* </div> */}
 			<div className={`${s.item} ${s.activeNavLink}`} >
 				{/* <div className={s.activeNavLink}> */}
 					<NavLink to='/music'>Music</NavLink>
-				{/* </div> */}
 			</div>
 			<div className={`${s.item} ${s.activeNavLink}`} >
 				{/* <div className={s.activeNavLink}> */}
 					<NavLink to='/settings'>Settings</NavLink>
 				</div>
-			{/* </div> */}
 		</nav>);
 }
 export default Navbar;

@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Header from './components/Header/Header';
 import Music from './components/Music/Music';
 import Navbar from './components/Navbar/Navbar';
@@ -9,6 +9,7 @@ import Profile from './components/Profile/Profile';
 import Settings from './components/Settings/Settings';
 
 function App(props) {
+
 	return (
 			<div className='app-wrapper'>
 				<Header />
@@ -17,11 +18,10 @@ function App(props) {
 					<Routes>
 						<Route path='/profile'
 							element={<Profile
-								profilePage={props.state.profilePage} 
-								dispatch={props.dispatch} 
+								store={props.store}
 								/>} />
 						<Route path='/dialogs/*'
-							element={<Dialogs
+							element={<DialogsContainer
 								store={props.store}/>} />
 						<Route path='/news' element={<News />} />
 						<Route path='/music' element={<Music />} />

@@ -8,7 +8,7 @@ import News from './components/News/News';
 import Profile from './components/Profile/Profile';
 import Settings from './components/Settings/Settings';
 
-function App(props) {
+function App() {
 
 	return (
 			<div className='app-wrapper'>
@@ -17,12 +17,11 @@ function App(props) {
 				<div className ='app-wrapper-content'>
 					<Routes>
 						<Route path='/profile'
-							element={<Profile
-								store={props.store}
-								/>} />
+							element={<Profile/>} />
 						<Route path='/dialogs/*'
-							element={<DialogsContainer
-								store={props.store}/>} />
+							element={<DialogsContainer/>}/>
+						<Route path='/users/*'
+							element={<div>Users</div>}/>
 						<Route path='/news' element={<News />} />
 						<Route path='/music' element={<Music />} />
 						<Route path='/settings' element={<Settings />} />

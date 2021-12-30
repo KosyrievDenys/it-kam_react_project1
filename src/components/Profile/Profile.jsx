@@ -2,13 +2,12 @@ import MyPostsContainer from './MyPosts/MyPostsContainer';
 import s from './Profile.module.css';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
-function Profile(props) {
+function Profile() {
 	// debugger;
 	return (
 		<div>
 			<ProfileInfo />
-			<MyPostsContainer
-				store={props.store} />
+			<MyPostsContainer/>
 		</div>);
 }
 
